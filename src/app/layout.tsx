@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Consumidor - NewCooltura Informada",
+  title: "Derechos del Consumidor Chile | NewCooltura Informada",
   description: "Oficinas SERNAC, derechos del consumidor, calculadora de garantia y proceso de reclamo en Chile",
+  keywords: ["SERNAC", "derechos consumidor", "reclamos", "garantia legal", "proteccion consumidor"],
+  openGraph: {
+    title: "Consumidor Chile - NewCooltura Informada",
+    description: "SERNAC, garantias y reclamos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
